@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.input-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column; /* Stack the list and notes containers */
+    height: 100vh;
+    overflow: hidden;
+}
+
+.list-container, .notes-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.horizontal-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.name-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f9f9f9;
+}
+
+.note-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    background-color: #558cec;
+}
+
+button {
+    margin-top: 10px;
+    display: block;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Adjust styles for the note containers */
+.notes-container {
+    display: none;
+    background-color: #233aad;
+}
+
+.note-box {
+    border: none;
+    background-color: #fff;
+}
